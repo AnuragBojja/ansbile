@@ -8,19 +8,23 @@
   tasks:
   - name: Print cridentials
     ansible.builtin.debug:
-    msg: "hello, username is : {{ username }} play-1 task-1"
+      msg: "hello, username is : {{ username }} play-1 task-1"
   - name: print Welcome
     ansible.builtin.debug:
-    msg: "Welcome to the Ansible: {{ username }} play-1 task-2"
+      msg: "Welcome to the Ansible: {{ username }} play-1 task-2"
 
 - name: play 2 tasks
   hosts: local
   connection: local
+  vars_prompt:
+  - name: ReEnter username
+    prompt: ReEnter username
+    private: false
   tasks: 
   - name: play 2 task 1
     ansible.builtin.debug:
-    msg: " this is play 2 task-1 {{ username }}"
+      msg: " this is play 2 task-1 {{ username }}"
   
   - name: play 2 task 2
     ansible.builtin.debug:
-    msg: " this is play 2 task-2 {{ username }}"
+      msg: " this is play 2 task-2 {{ username }}"
