@@ -20,6 +20,6 @@
       msg: "Cource is: {{ COURCE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 2"
   - name: printing cource from file Level-3 
     vars_files:
-      cource.yaml
+      - cource.yaml
     ansible.builtin.debug:
       msg: "Cource is: {{ COURCE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 2"
