@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars_prompt:
-    name: number
-    prompt: Enter number
-    private: false
+    - name: number
+      prompt: Enter number
+      private: false
   tasks:
   - name: check number is less than 10
     debug:
