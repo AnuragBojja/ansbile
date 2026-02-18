@@ -11,7 +11,7 @@
   - name: printing the cource info
     vars:
       COURSE: "Ansible With RHEL"
-    ansible.builtin.debug:
+    debug:
       msg: "Cource is: {{ COURSE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }}"
 
   - name: printing cource info at Task level-2 
@@ -19,7 +19,7 @@
       COURSE: "DevOps With Aws"
       DURATION: 200hrs
       TRAINER: Keerthi
-    ansible.builtin.debug:
+    debug:
       msg: "Cource is: {{ COURSE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 2"
 
   
