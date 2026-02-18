@@ -8,10 +8,10 @@
    TRAINER: Anurag
 
   tasks:
-  # - name: printing the cource info
-  #   vars:
-  #     COURSE: "Ansible With RHEL"
-  - debug:
+  - name: printing the cource info
+    vars:
+      COURSE: "Ansible With RHEL"
+    debug:
       msg: "Cource is: {{ COURSE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }}"
 
   - name: printing cource info at Task level-2 
