@@ -8,5 +8,6 @@
   tasks:
   - name: check number is less than 10
     debug:
-      msg: "given number {{ number }} is less than 10"
-    when: number | int < 10
+      #msg: "given number {{ number }} is less than 10"
+      msg: "Number {{ number }} is {{ 'less than 10' if number | int < 10 else 'grater than 10' }}"
+    #when: number | int < 10
