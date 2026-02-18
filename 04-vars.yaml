@@ -1,25 +1,29 @@
 - name: working on variables
   hosts: local
   connection: local
+
   vars:
-   COURCE: Ansible
+   COURSE: Ansible
    DURATION: 120hrs
    TRAINER: Anurag
+   
   tasks:
   - name: printing the cource info
     vars:
-      COURCE: "Ansible With RHEL"
+      COURSE: "Ansible With RHEL"
     ansible.builtin.debug:
-      msg: "Cource is: {{ COURCE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }}"
+      msg: "Cource is: {{ COURSE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }}"
+
   - name: printing cource info at Task level-2 
     vars:
-      COURCE: "DevOps With Aws"
+      COURSE: "DevOps With Aws"
       DURATION: 200hrs
       TRAINER: Keerthi
     ansible.builtin.debug:
-      msg: "Cource is: {{ COURCE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 2"
+      msg: "Cource is: {{ COURSE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 2"
+
   - name: printing cource from file Level-3 
     vars_files:
       - cource.yaml
     ansible.builtin.debug:
-      msg: "Cource is: {{ COURCE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 2"
+      msg: "Cource is: {{ COURSE }} Duration is:{{ DURATION }}, and the Trainer is: {{ TRAINER }} this is level 3"
