@@ -17,7 +17,7 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: ReEnter username
+  - name: username
     prompt: ReEnter username
     private: false
   tasks: 
