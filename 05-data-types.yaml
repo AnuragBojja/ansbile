@@ -14,6 +14,6 @@
     cm: ansible
   tasks:
   - name: print cource info
-  debug:
-    msg: "Cource name {{ COURCE }} duration is {{ DURATION }}HRS is live {{ is_live }} and tools are {{ tools }} and concepts are {{ Concepts }}"
+    debug:
+      msg: "Cource name {{ COURCE }} duration is {{ DURATION }}HRS is live {{ is_live }} and tools are {{ tools }} and concepts are {{ Concepts }}"
   
