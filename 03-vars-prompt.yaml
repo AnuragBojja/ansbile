@@ -1,9 +1,9 @@
 - name: variables from promt
   hosts: local
-  connections: local
+  connection: local
   vars_prompt:
   - name: username
-    promt: what is your username?
+    prompt: what is your username?
     private: false
   tasks:
   - name: Print cridentials
