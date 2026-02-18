@@ -8,7 +8,7 @@
   tasks:
   - name: Print cridentials
     ansible.builtin.debug:
-     msg: "hello, username is : {{ username }} play-1 task-1"
+    msg: "hello, username is : {{ username }} play-1 task-1"
   - name: print Welcome
     ansible.builtin.debug:
     msg: "Welcome to the Ansible: {{ username }} play-1 task-2"
