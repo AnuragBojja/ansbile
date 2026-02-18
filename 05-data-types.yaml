@@ -1,0 +1,19 @@
+- name: data Types
+  hosts: local
+  connection: local
+  vars:
+   COURCE: "DevOps with AWS"
+   DURATION: 120
+   is_live: true
+   tools:
+   - "linux"
+   - "DevOps"
+   - "ansible"
+   Concepts:
+    cloud: AWS
+    cm: ansible
+  tasks:
+  - name: print cource info
+  debug:
+    msg: "Cource name {{ COURCE }} duration is {{ DURATION }}HRS is live {{ is_live }} and tools are {{ tools }} and concepts are {{ Concepts }}"
+  
