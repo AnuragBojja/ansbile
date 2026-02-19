@@ -2,10 +2,11 @@
   hosts: local
   connection: local
   become: yes
+
   tasks:
   - name: installing packages
     package:
-      name: {{ item }}
+      name: "{{ item }}"
       state: latest
     loop:
     - nginx
