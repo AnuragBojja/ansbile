@@ -3,10 +3,11 @@
   connection: local
   tasks:
   - name: printing names
-    debug:
-      msg: "Hello {{ item }}"
+    package:
+      name: {{ item }}
+      state: latest
     loop:
-    - anurag
-    - keerthi
-    - anu
-    - keke
+    - nginx
+    - mysql
+    - zip
+    
