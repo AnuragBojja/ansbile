@@ -4,4 +4,4 @@
   tasks:
   - name: implementing functions
     debug:
-      msg: "hello {{name | defailt('Anurag') }}"
+      msg: "hello {{name | default('Anurag') }}"
