@@ -7,6 +7,11 @@
       cloud: AWS
       Laungage: Shell
       Tool: Ansible
+    listTags:
+    - key: Application
+      value: RoboShop
+    - key: Env
+      value: dev
   tasks:
   - name: implementing functions
     debug:
@@ -17,3 +22,7 @@
   - name: Dict to list
     debug:
       msg: "list are {{tags | dict2items}}"
+
+  - name: list to dicr
+    debug:
+    msg: "tags maps: {{listTags | items2dict}}"
