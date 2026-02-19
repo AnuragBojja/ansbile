@@ -16,4 +16,4 @@
       msg: "Techonologys are {{tech | split(',')}}"
   - name: Dict to list
     debug:
-      msg: "list are {{tags | dict2item}}"
+      msg: "list are {{tags | dict2items}}"
