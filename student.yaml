@@ -1,0 +1,137 @@
+students_by_major:
+  Computer Science:
+    - id: 1
+      name: John Smith
+      email: john.smith@example.com
+      age: 20
+      gpa: 3.8
+  Information Technology:
+    - id: 2
+      name: Sarah Johnson
+      email: sarah.johnson@example.com
+      age: 21
+      gpa: 3.9
+  Software Engineering:
+    - id: 3
+      name: Michael Brown
+      email: michael.brown@example.com
+      age: 19
+      gpa: 3.5
+  Data Science:
+    - id: 4
+      name: Emily Davis
+      email: emily.davis@example.com
+      age: 20
+      gpa: 3.7
+  Cybersecurity:
+    - id: 5
+      name: David Wilson
+      email: david.wilson@example.com
+      age: 22
+      gpa: 3.6
+  Artificial Intelligence:
+    - id: 6
+      name: Jessica Martinez
+      email: jessica.martinez@example.com
+      age: 20
+      gpa: 3.9
+  Web Development:
+    - id: 7
+      name: James Anderson
+      email: james.anderson@example.com
+      age: 21
+      gpa: 3.4
+  Cloud Computing:
+    - id: 8
+      name: Lisa Taylor
+      email: lisa.taylor@example.com
+      age: 19
+      gpa: 3.8
+  DevOps:
+    - id: 9
+      name: Christopher Lee
+      email: christopher.lee@example.com
+      age: 20
+      gpa: 3.6
+  Database Administration:
+    - id: 10
+      name: Amanda White
+      email: amanda.white@example.com
+      age: 21
+      gpa: 3.7
+
+students_by_id:
+  1:
+    name: John Smith
+    email: john.smith@example.com
+    age: 20
+    gpa: 3.8
+    major: Computer Science
+  2:
+    name: Sarah Johnson
+    email: sarah.johnson@example.com
+    age: 21
+    gpa: 3.9
+    major: Information Technology
+  3:
+    name: Michael Brown
+    email: michael.brown@example.com
+    age: 19
+    gpa: 3.5
+    major: Software Engineering
+  4:
+    name: Emily Davis
+    email: emily.davis@example.com
+    age: 20
+    gpa: 3.7
+    major: Data Science
+  5:
+    name: David Wilson
+    email: david.wilson@example.com
+    age: 22
+    gpa: 3.6
+    major: Cybersecurity
+  6:
+    name: Jessica Martinez
+    email: jessica.martinez@example.com
+    age: 20
+    gpa: 3.9
+    major: Artificial Intelligence
+  7:
+    name: James Anderson
+    email: james.anderson@example.com
+    age: 21
+    gpa: 3.4
+    major: Web Development
+  8:
+    name: Lisa Taylor
+    email: lisa.taylor@example.com
+    age: 19
+    gpa: 3.8
+    major: Cloud Computing
+  9:
+    name: Christopher Lee
+    email: christopher.lee@example.com
+    age: 20
+    gpa: 3.6
+    major: DevOps
+  10:
+    name: Amanda White
+    email: amanda.white@example.com
+    age: 21
+    gpa: 3.7
+    major: Database Administration
+
+high_performers:
+  - id: 2
+    name: Sarah Johnson
+    gpa: 3.9
+  - id: 6
+    name: Jessica Martinez
+    gpa: 3.9
+  - id: 1
+    name: John Smith
+    gpa: 3.8
+  - id: 8
+    name: Lisa Taylor
+    gpa: 3.8
