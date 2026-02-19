@@ -3,6 +3,10 @@
   connection: local
   vars:
     tech: DevOps, Linux, Shell, Ansible
+    tags:
+      cloud: AWS
+      Laungage: Shell
+      Tool: Ansible
   tasks:
   - name: implementing functions
     debug:
@@ -10,3 +14,6 @@
   - name: convert string to list
     debug:
       msg: "Techonologys are {{tech | split(',')}}"
+  - name: Dict to list
+    debug:
+      msg: "list are {{tags | dict2item}}"
