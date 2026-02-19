@@ -25,4 +25,4 @@
 
   - name: list to dicr
     debug:
-    msg: "tags maps: {{listTags | items2dict}}"
+      msg: "tags maps: {{listTags | items2dict}}"
