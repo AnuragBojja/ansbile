@@ -1,7 +1,12 @@
 - name: functions
   hosts: local
   connection: local
+  vars:
+    tech: DevOps, Linux, Shell, Ansible
   tasks:
   - name: implementing functions
     debug:
       msg: "hello {{name | default('Anurag')}}" 
+  - name: convert string to list
+    debug:
+      msg: "Techonologys are {{tech}}"
