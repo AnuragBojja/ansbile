@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: implementing functions
-    debug:
+    ansible.builtin.debug:
       msg: "hello {{name | default('Anurag') }}" 
