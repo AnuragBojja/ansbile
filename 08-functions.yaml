@@ -3,6 +3,7 @@
   connection: local
   vars:
     tech: DevOps, Linux, Shell, Ansible
+    name: "anurag bojja"
     tags:
       cloud: AWS
       Laungage: Shell
@@ -39,3 +40,7 @@
     copy:
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json }}"
+  
+  - name: name correct
+    debug:
+      msg: "{{name | title}}"
