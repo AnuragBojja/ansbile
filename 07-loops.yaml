@@ -1,8 +1,9 @@
 - name: working on loops
   hosts: local
   connection: local
+  become: yes
   tasks:
-  - name: printing names
+  - name: installing packages
     package:
       name: {{ item }}
       state: latest
