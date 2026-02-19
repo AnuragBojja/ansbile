@@ -1,0 +1,7 @@
+- name: functions
+  hosts: local
+  connection: local
+  tasks:
+  - name: implementing functions
+    debug:
+      msg: "hello {{name | defailt('Anurag') }}"
