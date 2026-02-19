@@ -1,0 +1,12 @@
+- name: working on loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: printing names
+    debug:
+      msg: "Hello {{ item }}"
+    loop:
+    - anurag
+    - keerthi
+    - anu
+    - keke
