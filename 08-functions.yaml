@@ -26,3 +26,16 @@
   - name: list to dicr
     debug:
       msg: "tags maps: {{listTags | items2dict}}"
+
+  - name: Read yaml 
+    set_fact:
+      student_yaml: "{{ lookup('file','student.yaml') | from_yaml }}"
+
+  - name: convert yaml into json
+    debug:
+      msg: "JSON : {{student_yaml | to_json}}"
+  
+  - name: Save JSON file 
+    copy:
+      dest: ./student-data.json
+      content: "{{ student_yaml | to_nice_json }}"
