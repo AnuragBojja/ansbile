@@ -1,7 +1,6 @@
 - name: functions
   hosts: local
   connection: local
-  become: yes
   vars:
     tech: DevOps, Linux, Shell, Ansible
     name: "anurag bojja"
@@ -56,3 +55,11 @@
   - name: print command command_output
     debug:
       msg: "{{command_output}}"
+  
+  - name: list of files command
+    command: ls -ltr
+    register: list_output
+  
+  - name: print list_output
+    debug:
+      msg: "{{list_output}}"
