@@ -48,3 +48,10 @@
        - "{{name | title}}"
        - "Done"
     
+  - name: grep for root
+    shell: cat /etc/passwd | grep root
+    register: command_output
+  
+  - name: print command command_output
+    debug:
+      msg: "{{command_output}}"
