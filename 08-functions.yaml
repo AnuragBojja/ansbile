@@ -43,4 +43,8 @@
   
   - name: name correct
     debug:
-      msg: "{{name | title}}"
+      msg: 
+       - "{{name}}"
+       - "{{name | title}}"
+       - "Done"
+    
