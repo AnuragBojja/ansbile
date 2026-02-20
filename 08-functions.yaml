@@ -1,6 +1,7 @@
 - name: functions
   hosts: local
   connection: local
+  become: yes
   vars:
     tech: DevOps, Linux, Shell, Ansible
     name: "anurag bojja"
